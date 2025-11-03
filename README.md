@@ -22,10 +22,51 @@ See more info at https://academicpages.github.io/
 
 When you are initially working your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
 
+### For ubuntu
+
 1. Clone the repository and made updates as detailed above.
 1. Make sure you have ruby-dev, bundler, and nodejs installed: `sudo apt install ruby-dev ruby-bundler nodejs`
 1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
 1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
+
+### For windows
+
+#### 1.克隆仓库到本地
+   >git clone https://github.com/qingkaiyang/qingkaiyang.github.io.git
+#### 2.安装Ruby
+1. 前往官网下载安装Ruby：`https://rubyinstaller.org/downloads/` （选择with Devkit目录下`3.3.x+`版本下载，安装过程无需额外勾选，按照默认勾选即可）
+2. 在以管理员身份运行`Start Command Prompt with Ruby`时，注意选择` 3 - MSYS2 and MINGW development toolchain`,如果不小心选择错误，输入`ridk install`打开安装菜单
+3. 安装完成后，在 PowerShell 中检查：
+   >ruby -v
+   >gem -v
+
+   **输出版本号即已完成安装**
+#### 3.安装 Bundler
+在 PowerShell 中运行：
+   >gem install bundler
+#### 4.安装 Node.js
+1. 前往`https://nodejs.org/en/download`，下载`Windows Installer(.msi)`
+2. 高级系统设置->系统变量->将nodejs目录添加到path中
+3. 安装完成后，在 PowerShell 中检查：
+   >node -v
+    npm -v
+
+    **输出版本号即已完成安装**
+>Tips:
+>如果遇到下述情况：node -v输出版本，npm -v出现下述报错：
+>>npm : 无法加载文件 C:\Program Files\nodejs\npm.ps1。未对文件 C:\Program Files\nodejs\npm.ps1 进行数字签名。无法在当前系 统上运行该脚本。有关运行脚本和设置执行策略的详细信息，请参阅 https:/go.microsoft.com/fwlink/?LinkID=135170 中的 about_E xecution_Policies。
+>
+>解决方案：
+>1. 以**管理员身份**打开 PowerShell，输入`Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned`
+>2. 再次执行`npm -v`
+
+1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
+2. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
+#### 5.运行项目
+1. 打开项目目录PowerShell,输入`bundle install`（*后缀* --verbose可看详细日志，判断是否卡顿）
+2. 编译成功后，启动本地预览服务器,输入：
+   >bundle exec jekyll serve -l -H localhost
+
 
 
 # Maintenance 

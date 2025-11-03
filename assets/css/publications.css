@@ -1,0 +1,66 @@
+/* 整体容器样式 */
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* 单个 publication 项 */
+.publication-item {
+  display: flex;
+  align-items: flex-start;  /* 图片与文字顶部对齐 */
+  gap: 16px;                /* 图片与文字间距 */
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #eee;
+}
+
+/* 左侧图片容器 */
+.pub-image img {
+  width: 200px;
+  height: 150px;
+  margin-right: 25px;
+  border-radius: 10px;
+}
+
+
+/* 右侧文字内容 */
+.pub-content {
+  flex: 1;                      /* 占据剩余空间 */
+  display: flex;
+  flex-direction: column;       /* 垂直排列文字 */
+  justify-content: flex-start;  /* 顶部对齐 */
+}
+
+.pub-content p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* 链接样式 */
+.pub-content a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.pub-content a:hover {
+  text-decoration: underline;
+  color: #1e40af;
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .publication-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pub-image {
+    width: 80%;
+    height: auto;
+    margin-bottom: 12px;
+  }
+}
+
+
