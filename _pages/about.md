@@ -13,14 +13,12 @@ I received my first doctoral degree in Control Science and Engineering from the 
 
 # Research Interests
 
-* Tensegrity robots
+* Intelligent Multi-Robot Cooperation
+  
+   Swarm planning and control, multi-sensor fusion, unmanned swarm (UAV/UGV) systems and applications
 
-   mechanical design, dynamic modeling, form-finding, locomotion Control, path planning
+* Novel Robotic Concepts and Embodied Intelligence:
 
-* Aerial robots
-
-   state estimation, multi-sensor fusion, path planning, trajectory generation, safe control, relative locolization
+   Tensegrity robots, morphological intelligence, brain-inspired perception and control, AI for robotics
  
-* Motion control of multiple robots (UAV, UGV)
 
-   formation control, spatial-temporal motion planning, cooperative locolization and control, resilient control 
