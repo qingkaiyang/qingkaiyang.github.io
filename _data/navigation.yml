@@ -11,3 +11,7 @@ main:
     
   - title: "Group"
     url: /group/
+
+  - title: "News and Events"
+    url: /events/
+
