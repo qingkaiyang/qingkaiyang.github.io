@@ -41,6 +41,10 @@ author_profile: false
 * Haotian Hu(Bachelor Student)
 * Yixin Yang(Bachelor Student)
 * Hanyang Sheng(Bachelor Student)
+* Kunlin Sun(Bachelor Student)
+* Wenliang Xiang(Bachelor Student)
+* Zilu Wang(Bachelor Student)
+* Jia Hui(Bachelor Student)
   
 ## Former Members
 
