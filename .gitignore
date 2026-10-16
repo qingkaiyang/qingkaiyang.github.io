@@ -8,3 +8,5 @@ Gemfile.lock
 node_modules
 package-lock.json
 
+# Ignore locally installed Ruby dependencies
+/vendor/bundle/
